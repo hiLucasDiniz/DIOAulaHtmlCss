@@ -1,0 +1,124 @@
+instalar vscode
+instalar tema dracula
+instalar extensão live server (para atualizar a pagina a cada salvamento)
+instalar extensão auto tag rename (para renomear o fechamento da tag em caso de alteração do nome dela)
+
+- criar as pastas img, js, style e o arquivo index.html
+- abrir o index digitar html e escolher html:5 (para criar a estrutura - uso do emet)
+- definir a semantica header
+- criar uma div classe container
+- dentro dela uma semantica de navegacao
+- dentro dela uns links (alt + shift + pra baixo - Para clonar a selecionada)
+
+- criar a folha de estilo (main css) a associar ela no html
+- por padrao os navegadores jogam um padding e marging não padronizado, deixando um espaço no começo do texto
+ para zerar isso colocar um * no css com margin 0 padding 0 e box-sizing: border-box (limitar o conteúdo e nao empurrar a caixa) 
+- criar variaveis no css - dentro do :root{}  (boas praticas para cor, por exemplo)
+- colocar um backgroung no body (usando a variavel)
+- trocar a font-family (no body)
+- colocar uma classe chamada log no h2 do log da NF
+- formatar os itens do menu 
+	header nav a{
+   	 	text-decoration: none;
+   	 	color:#AAA;
+   	 	margin-right: 10px;
+	}
+
+	header nav a:hover{
+    		color:#FFF;
+	}
+- alterar o container para deixar tudo de dentro do container em linha e alinhar pelo centro:
+	header .container{	
+		display:flex;   (deixar tudo em linha)
+		align-items:center; (centralizar pelo centro)
+		justify-content: space-between  (distribuir horizontalmente os elementos)
+	}
+
+- alterar a margin-left do logo, para deixar um espacinho antes dele
+
+TODOS OS ELEMENTOS DA PAGINA ESTAO EM CAIXAS
+
+
+- imagem de fundo: site legal para imagens de filmes/series: themoviedb
+
+- criar a tag main, que é uma div com conceito de semantica
+
+- criar uma div dentro dela (atalho para criar div com classe: escrever div.nomeDaClasse e ENTER) e chamar de container tambem
+
+- classes wrappers (divs para encaixar as coisas)
+
+- na div container criar um h3 com um subtitulo e dar um nome de titulo
+
+-  jogar a cor desse texto branco, LA NO BODY!! porque todos herdam da classe mae, que nao tenha nada explicito
+
+- criar uma tag de paragrafo para uma descricao com o nome descricao
+
+- jogar um fundo na caixa da div container
+
+- jogar uma imagem de fundo do container do filme principal (background: url("/img/img-capa.jpg");)
+
+- colocar um background-size: cover  (para cobrir a area)
+
+- colocar um gradiente na imagem: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), 
+
+- criar botoes  classe botao e role = button (para dizer a funcao (e estilo) do botao
+
+- deixar o container como flex e flex-direction: column  e justify:center para jogar pro meio da coluna
+
+- fazer com que os itens começem da esquerda para direita com align-items: flex-start
+
+- Toda DIV nova tem por padrao div block
+
+- dar um espaço entre a descricao e os botoes :
+
+.filme-principal .descricao{
+    margin-bottom: 40px;
+}
+
+- deixar os botoes semi transparentes com:
+
+    background-color: rgba(0,0,0,.50);
+
+- alterar o padding para dar espaço interno nos botoes
+
+    padding: 15px;  padding com um argumento só aplica nas 4 direcoes
+
+- mudar o cursor do botao para hand:
+	cursor:pointer;
+
+- mudar cor do botao ao passar o mouse:
+
+.botao:hover{
+    background-color:white;
+    color:black;
+}
+
+- deixar o hover mais suave (animaçao)
+
+	transition: .3s ease all;
+
+- alterar os botoes (usando o Font Awesome)
+   enviar um email, pegar o link que recebeu no email, colar na pagina dentro do body
+<script src="https://kit.fontawesome.com/f0d56f8c07.js" crossorigin="anonymous"></script>
+	acessar o site, icons, free, escolher e copiar html, colar dentro do código do botao
+
+- usar Wrapper (divs) container!!
+
+- carrosel jquery exemplo:  Owl carousel 2
+  - baixar e copiar os arquivos js e css
+
+- pegar imagens no the movie database
+
+- ir no demo do owl carousel e copiar o codigo do basic
+
+- criar um js separado para o script do jquery
+- criar um js separado para o script do jquery
+
+- criar um css para classe do tamanho do filme (box-filme)
+
+
+- criar um arquivo responsive.css
+alterar algumas coisas
+
+jogar flex: column para os menus pularem para baixo a partir de700px
+
